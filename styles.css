@@ -1,8 +1,26 @@
 * {
+	width: 100%;
 	margin: 0 auto;
 }
 
 h1 {
-	color: steelblue;
+	color: #15c1f9;
 	background-color: lightgray;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-family: Calibri;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 6vw;
+	font-size: 6vmax;
+}
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.square {
+	width: 20%;
+	float: left;
 }
