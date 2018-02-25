@@ -1,0 +1,47 @@
+.section-intro {
+  background: url(../images/coding-blurred.jpg);
+  background-size: cover;
+	background-position: center;
+	height: 93vh;
+}
+
+.section-intro .intro {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.section-about .responsive-image {
+	height: 95%;
+	width: 95%;
+	max-height: 500px;
+	max-width: 500px;
+}
+
+.btn {
+	margin-bottom: 5px;
+	width: 175px;
+}
+
+.section-break {
+	font-size: 43px;
+}
+
+#header {
+	font-weight: 500;
+	font-size: 8vw;
+	padding-bottom: 10px;
+	border-bottom: 3px solid #64B5F6;
+}
+
+#sub-header {
+	font-weight: 450;
+	font-size: 4vw;
+}
+
+.section-portfolio .card-title {
+	padding: 5px !important;
+	padding-left: 20px !important;
+	padding-right: 20px !important;
+}

@@ -1,0 +1,24 @@
+{
+  "name": "trystonperry.com",
+  "version": "1.0.0",
+  "description": "Tryston perry website",
+  "main": "app.js",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Trystonperry11/TrystonPerry.com.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Trystonperry11/TrystonPerry.com/issues"
+  },
+  "homepage": "https://github.com/Trystonperry11/TrystonPerry.com#readme"
+}
