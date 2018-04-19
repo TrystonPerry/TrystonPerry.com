@@ -1,0 +1,33 @@
+.input-group {
+  width: 100%;
+}
+
+.center {
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+a {
+  margin-top: 10px;
+  width: 100% !important;
+  border-radius: 20px !important;
+}
+
+.user-stats .btn {
+  margin: 5px;
+  font-size: 15px;
+  width: 46.5%;
+}
+
+.list-group {
+  margin: 5px;
+  width: 95%;
+}
+
+.repo-stats .btn {
+  margin: 5px;
+}

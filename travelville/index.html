@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="css/main.css" />
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Custom Materialize Theme</title>
+</head>
+
+<body>
+  <div class="navbar-fixed scrollspy" id="home">
+    <nav class="teal">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="#home" class="brand-logo">Travelville</a>
+          <a href="#" data-activates="mobile-nav" class="button-collapse">
+            <i class="material-icons">menu</i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#search">Search</a></li>
+            <li><a href="#popular">Popular Places</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <ul class="side-nav" id="mobile-nav">
+    <li><a href="#home"><i class="material-icons black-text">home</i>Home</a></li>
+    <li><a href="#search"><i class="material-icons black-text">search</i>Search</a></li>
+    <li><a href="#popular"><i class="material-icons black-text">location_on</i>Popular Places</a></li>
+    <li><a href="#gallery"><i class="material-icons black-text">panorama</i>Gallery</a></li>
+    <li><a href="#contact"><i class="material-icons black-text">mail</i>Contact</a></li>
+  </ul>
+
+  <!-- Section: Slider -->
+  <section class="slider">
+    <ul class="slides">
+      <li>
+        <img src="img/resort1.jpg" alt="">
+        <div class="caption center-align">
+          <h2>Take Your Dream Vacation</h2>
+          <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus voluptate eos, earum fuga provident aspernatur!</h5>
+          <a href="#" class="btn btn-large">Learn More</a>
+        </div>
+      </li>
+      <li>
+        <img src="img/resort2.jpg" alt="">
+        <div class="caption left-align">
+          <h2>We Work With All Budgets</h2>
+          <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus voluptate eos, earum fuga provident aspernatur!</h5>
+          <a href="#" class="btn btn-large">Learn More</a>
+        </div>
+      </li>
+      <li>
+        <img src="img/resort3.jpg" alt="">
+        <div class="caption right-align">
+          <h2>Group & Individual Getaways</h2>
+          <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus voluptate eos, earum fuga provident aspernatur!</h5>
+          <a href="#" class="btn btn-large">Learn More</a>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Section: Search -->
+  <section class="section section-search teal darken-1 text-white center scrollspy" id="search">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <h3 class="white-text"><i class="material-icons">search</i> Find Your Destination</h3>
+          <div class="input-field">
+            <input type="text" class="white grey-text autocomplete" placeholder="Aruba, Cancoon, etc.." id="autocomplete-input">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Icon Boxes -->
+  <section class="section section-icons grey lighten-4 center">
+    <div class="container">
+      <div class="row">
+        <div class="col m12 l4">
+          <div class="card-panel">
+            <i class="material-icons large teal-text">room</i>
+            <h4>Choose Location</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, nisi.</p>
+          </div>
+        </div>
+        <div class="col m12 l4">
+          <div class="card-panel">
+            <i class="material-icons large teal-text">airplanemode_active</i>
+            <h4>Affordable Flights</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, nisi.</p>
+          </div>
+        </div>
+        <div class="col m12 l4">
+          <div class="card-panel">
+            <i class="material-icons large teal-text">store</i>
+            <h4>View Our Shop</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, nisi.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Popular -->
+  <section class="section section-popular scrollspy" id="popular">
+    <div class="container">
+      <div class="row">
+        <h4 class="center"><span class="teal-text"><i class="material-icons">location_on</i> Popular</span> Places</h4>
+        <div class="col m12 l4">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/resort1.jpg" alt="">
+              <span class="card-title">Cancoon, Mexico</span>
+            </div>
+            <div class="card-content">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam impedit minus tempora odio nulla dolore?</p>
+            </div>
+            <div class="card-action">
+              <a href="#!" class="teal-text">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col m12 l4">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/resort2.jpg" alt="">
+              <span class="card-title">Houston, Texas</span>
+            </div>
+            <div class="card-content">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam impedit minus tempora odio nulla dolore?</p>
+            </div>
+            <div class="card-action">
+              <a href="#!" class="teal-text">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col m12 l4">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/resort3.jpg" alt="">
+              <span class="card-title">San Diego, California</span>
+            </div>
+            <div class="card-content">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam impedit minus tempora odio nulla dolore?</p>
+            </div>
+            <div class="card-action">
+              <a href="#!" class="teal-text">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 center">
+          <a href="#contact" class="btn btn-large grey darken-3"><i class="material-icons left">send</i> Contact For Booking</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Follow -->
+  <section class="section section-follow teal darken-2 white-text center">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <h4>Follow Travelville</h4>
+          <p>Follow us on social media for special offers</p>
+          <a href="https://facebook.com" target="blank" class="white-text">
+            <i class="fab fa-facebook fa-4x"></i>
+          </a>
+          <a href="https://twitter.com" target="blank" class="white-text">
+            <i class="fab fa-twitter fa-4x"></i>
+          </a>
+          <a href="https://linkedin.com" target="blank" class="white-text">
+            <i class="fab fa-linkedin fa-4x"></i>
+          </a>
+          <a href="https://googleplus.com" target="blank" class="white-text">
+            <i class="fab fa-google-plus fa-4x"></i>
+          </a>
+          <a href="https://pinterest.com" target="blank" class="white-text">
+            <i class="fab fa-pinterest fa-4x"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Gallery -->
+  <section class="section section-gallery scrollspy" id="gallery">
+    <div class="container">
+      <h4 class="center">
+        <span class="teal-text"><i class="material-icons">panorama</i> Photo </span> Gallery
+      </h4>
+      <div class="row">
+        <div class="col s12 m6 l4 xl3">
+          <img src="https://source.unsplash.com/1600x900/?beach" alt="" class="materialboxed responsive-img">
+        </div>
+        <div class="col s12 m6 l4 xl3">
+          <img src="https://source.unsplash.com/1600x900/?travel" alt="" class="materialboxed responsive-img">
+        </div>
+        <div class="col s12 m6 l4 xl3">
+          <img src="https://source.unsplash.com/1600x900/?flight" alt="" class="materialboxed responsive-img">
+        </div>
+        <div class="col s12 m6 l4 xl3">
+          <img src="https://source.unsplash.com/1600x900/?nature" alt="" class="materialboxed responsive-img">
+        </div>
+        <div class="col s12 m6 l4 xl3">
+          <img src="https://source.unsplash.com/1600x900/?boardwalk" alt="" class="materialboxed responsive-img">
+        </div>
+        <div class="col s12 m6 l4 xl3">
+          <img src="https://source.unsplash.com/1600x900/?new%20york" alt="" class="materialboxed responsive-img">
+        </div>
+        <div class="col s12 m6 l4 xl3">
+          <img src="https://source.unsplash.com/1600x900/?rocky%20beach" alt="" class="materialboxed responsive-img">
+        </div>
+        <div class="col s12 m6 l4 xl3">
+          <img src="https://source.unsplash.com/1600x900/?natural%20river" alt="" class="materialboxed responsive-img">
+        </div>
+        <div class="col s12 m6 l4 xl3">
+          <img src="https://source.unsplash.com/1600x900/?hotel%20view" alt="" class="materialboxed responsive-img">
+        </div>
+        <div class="col s12 m6 l4 xl3">
+          <img src="https://source.unsplash.com/1600x900/?cruise%20ship" alt="" class="materialboxed responsive-img">
+        </div>
+        <div class="col s12 m6 l4 xl3">
+          <img src="https://source.unsplash.com/1600x900/?hotel" alt="" class="materialboxed responsive-img">
+        </div>
+        <div class="col s12 m6 l4 xl3">
+          <img src="https://source.unsplash.com/1600x900/?free%20breakfast" alt="" class="materialboxed responsive-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Contact -->
+  <section class="section section-contact scrollspy" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="card teal">
+            <div class="card-content center white-text">
+              <i class="material-icons medium">email</i>
+              <h4>Contact Us For Booking</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi eveniet officiis deserunt odit possimus cumque inventore praesentium, sit doloremque id!</p>
+            </div>
+          </div>
+          <div class="collection with-header">
+            <div class="collection-header">
+              <h4>Our Location</h4>
+            </div>
+            <div class="collection-item">
+              <p>Travelville Travel Agency</p>
+            </div>
+            <div class="collection-item">
+              <p>555 Beach rd, Suite 333</p>
+            </div>
+            <div class="collection-item">
+              <p>Miami FL, 55555</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6">
+          <div class="card grey lighten-3">
+            <div class="card-content">
+              <form action="">
+                <h4>Contact Form</h4>
+                <div class="input-field">
+                  <input type="text" id="name">
+                  <label for="name">Name</label>
+                </div>
+                <div class="input-field">
+                  <input type="email" id="email">
+                  <label for="email">Email</label>
+                </div>
+                <div class="input-field">
+                  <input type="number" id="phone">
+                  <label for="phone">Phone Number</label>
+                </div>
+                <div class="input-field">
+                  <input type="text" id="message">
+                  <label for="message">Message</label>
+                </div>
+                <br>
+                <button class="btn teal">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Footer -->
+  <section class="section section-footer">
+    <footer class="page-footer grey darken-3">
+      <div class="container">
+        <div class="row grey-text text-lighten-2">
+          <div class="col s12 m6">
+            <h5>About Us</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe odit, pariatur accusantium debitis non aperiam minus beatae facilis optio rem dignissimos minima quisquam cupiditate quidem voluptate eius neque iure ullam? Eaque modi autem quasi optio, officiis dolor sed! Distinctio, aliquid!</p>
+          </div>
+          <div class="col s12 m4 offset-2">
+            <h5 class="grey-text text-lighten-3">Links</h5>
+            <div class="row" style="margin-bottom:5px">
+              <div class="col s1">
+                  <a href="" class="fab fa-facebook white-text" style="font-size:20px;padding-right:5px"></a>
+              </div>
+              <div class="col s11">
+                <a href="" class="white-text">Facebook</a>
+              </div>
+            </div>
+            <div class="row" style="margin-bottom:5px">
+              <div class="col s1">
+                  <a href="" class="fab fa-twitter white-text" style="font-size:20px;padding-right:5px"></a>
+              </div>
+              <div class="col s11">
+                <a href="" class="white-text">Twitter</a>
+              </div>
+            </div>
+            <div class="row" style="margin-bottom:5px">
+              <div class="col s1">
+                  <a href="" class="fab fa-linkedin white-text" style="font-size:20px;padding-right:5px"></a>
+              </div>
+              <div class="col s11">
+                <a href="" class="white-text">LinkedIn</a>
+              </div>
+            </div>
+            <div class="row" style="margin-bottom:5px">
+              <div class="col s1">
+                  <a href="" class="fab fa-google-plus white-text" style="font-size:20px;padding-right:5px"></a>
+              </div>
+              <div class="col s11">
+                <a href="" class="white-text">Google+</a>
+              </div>
+            </div>
+            <div class="row" style="margin-bottom:5px">
+              <div class="col s1">
+                  <a href="" class="fab fa-pinterest white-text" style="font-size:20px;padding-right:5px"></a>
+              </div>
+              <div class="col s11">
+                <a href="" class="white-text">Pinterest</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright grey darken-2">
+        <div class="container">
+          Copyright Travelville &copy; 2018
+          <a href="#!" class="grey-text text-lighten-3 right">Terms & Conditions</a>
+        </div>
+      </div>
+    </footer>
+</section>
+
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Custom JS & jQuery here
+      $('.button-collapse').sideNav();
+      $('.slider').slider({
+        indicators: false,
+        height: 500,
+        transition: 500,
+        interval: 6000
+      });
+
+      // Init Autocomplete
+      $('.autocomplete').autocomplete({
+        data: {
+          "Aruba": null,
+          "Cancun Mexico": null,
+          "Hawaii": null,
+          "Florida": null,
+          "California": null,
+          "Jamaica": null,
+          "Texas": null,
+          "New York": null,
+          "Canada": null,
+          "Puerto Rico": null,
+        }
+      })
+
+      $('.scrollspy').scrollSpy();
+
+    });
+
+
+    
+  </script>
+</body>
+
+</html>
