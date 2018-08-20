@@ -1,55 +1,97 @@
-.section-intro {
-  background: url(../images/coding-blurred.jpg);
-  background-size: cover;
-	background-position: center;
-	height: 93vh;
+* {
+  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
 }
 
-.section-intro .intro {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+body {
+  margin: 0;
+  margin-bottom: 10000px;
 }
 
-.section-about .responsive-image {
-	height: 95%;
-	width: 95%;
-	max-width: 500px;
-	border-radius: 100px;
+.container {
+  width: 1200px;
+  margin: 0 auto;
 }
 
-.btn {
-	margin-bottom: 5px;
-	width: 175px;
+.navbar {
+  background: rgb(16, 162, 230);
+  margin: 0px;
+  padding: 10px;
+  height: 70px;
+  padding: 0;
+  box-shadow: 0px 0px 10px 1px;
 }
 
-.section-break {
-	font-size: 43px;
+.nav-text {
+  color: white;
+  text-decoration: none;
 }
 
-#header {
-	font-weight: 500;
-	font-size: 8vw;
-	padding-bottom: 10px;
-	border-bottom: 3px solid #64B5F6;
+#nav-brand {
+  font-size: 40px;
+  display: block;
+  float: left;
+  margin-right: 25px;
+  margin-top: 7.5px;
 }
 
-#sub-header {
-	font-weight: 450;
-	font-size: 4vw;
+.nav-list {
+  display: block;
+  float: left;
+  margin-left: 10px;
+  padding: 0;
+  margin: 0;
 }
 
-.section-portfolio .card-title {
-	padding: 5px !important;
-	padding-left: 20px !important;
-	padding-right: 20px !important;
+.nav-list-item {
+  display: block;
+  float: left;
+  padding: 25.5px;
 }
 
-.see-site-btn {
-	color: rgb(37, 128, 203) !important;
+.nav-list-item a {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
 }
 
-.see-github-btn {
-	color: purple !important;
+.nav-list-item:hover {
+  background: rgb(8, 85, 99, 0.2);
+}
+
+.project-info {
+  position: absolute;
+  z-index: 3;
+  color: white;
+  padding: 20px;
+}
+
+.project-title {
+  color: #326AE4;
+  font-size: 150px;
+  margin: 0;
+}
+
+.project-handle {
+  margin: 0;
+}
+
+.gradient {
+  background: -moz-linear-gradient(right, rgba(0,0,0,0.80) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(right, rgba(0,0,0,0.80) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(0,0,0,0.80) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+  max-width: 1280px;
+  min-height: 720px;
+  object-fit: cover;
+  position: relative;
+  z-index: 2;
+}
+
+.project-video {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  object-fit: cover;
 }

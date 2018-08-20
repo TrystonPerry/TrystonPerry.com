@@ -4,286 +4,52 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-  <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="public/stylesheets/main.css">
-  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-  
-  <!--Let browser know website is optimized for mobile-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./public/stylesheets/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <title>Tryston Perry</title>
 </head>
 <body>
-  <div class="navbar-fixed">
-    <nav class="blue lighten-2">
+  <!-- <section class="section section-navbar">
+    <nav class="navbar">
       <div class="container">
-        <div class="nav-wrapper">
-          <a href="#" class="brand-logo">Tryston Perry</a>
-          <a href="#" class="button-collapse" data-activates="mobile-nav">
-            <i class="material-icons">menu</i>
+        <div class="nav-content">
+          <a href="/" class="nav-text" id="nav-brand">
+            Tryston Perry
           </a>
-          <ul class="right hide-on-med-and-down">
-            <li>
-              <a href="#">Home</a>
+          <ul class="nav-list">
+            <li class="nav-list-item" id="nav-abo">
+                <a href="#" class="nav-text">About Me</a>
             </li>
-            <li>
-              <a href="#about">About</a>
+            <li class="nav-list-item" id="nav-dev" title="Full Stack Web Developer">
+              <a href="#" class="nav-text">Web Development</a>
             </li>
-            <li>
-                <a href="#portfolio">Portfolio</a>
+            <li class="nav-list-item" id="nav-tmn" title="Programming Tutorials">
+              <a href="#" class="nav-text">The Modern Node</a>
             </li>
-            <li>
-              <a href="#contact">Contact</a>
+            <li class="nav-list-item" id="nav-inf">
+              <a href="#" class="nav-text">Books</a>
             </li>
-            <li>
-              <a href="https://blog.trystonperry.com" target="_blank">Blog</a>
+            <li class="nav-list-item" id="nav-inf">
+              <a href="#" class="nav-text">Blog</a>
+            </li>
+            <li class="nav-list-item" id="nav-con">
+              <a href="#" class="nav-text">Contact</a>
             </li>
           </ul>
         </div>
       </div>
-    </nav> 
+    </nav>
+  </section> -->
+  <div class="wrapper">
+    <div class="project-info">
+      <h1 class="project-title">Boarditt</h1>
+      <p class="project-handle">Advanced Todo Manager</p>
+    </div>
+    <div class="gradient">
+    </div>
+    <video class="project-video" src="./public/videos/Boarditt-Demo.mp4" height="720" width="1280" autoplay loop type="video/mp4"></video>
   </div>
-  <ul class="side-nav" id="mobile-nav">
-    <li>
-      <a href="#">Home</a>
-    </li>
-    <li>
-      <a href="#about">About</a>
-    </li>
-    <li>
-        <a href="#portfolio">Portfolio</a>
-    </li>
-    <li>
-      <a href="#contact">Contact</a>
-    </li>
-    <li>
-      <a href="https://blog.trystonperry.com" target="_blank">Blog</a>
-    </li>
-  </ul>
   
-
-  <!-- Home - Intro -->
-  <section class="section section-intro grey lighten-3"  id="home">
-    <div class="showcase container">
-      <div class="intro center">
-        <h1 class="center white-text" id="header">Tryston Perry</h1>
-        <h5 class="center white-text" id="sub-header">Full Stack Web Developer</h5>
-        <br>
-        <a href="mailto:Tryston@TrystonPerry.com" class="btn btn-large white black-text waves-effect waves-dark btn-hover"><i class="fa fa-envelope"></i>  Email Me</a>
-        <a href="https://linkedin.trystonperry.com" class="btn btn-large white black-text waves-effect waves-dark btn-hover" target="_blank"><i class="fab fa-linkedin"></i>  LinkedIn</a>
-        <a href="https://resume.trystonperry.com" class="btn btn-large white black-text waves-effect waves-dark btn-hover" target="_blank"><i class="fa fa-file-pdf"></i>  My Resume</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="section-break blue lighten-2 center white-text" id="about">About Me</section>
-
-  <!-- About Me -->
-  <section class="section section-about grey lighten-2">
-    <div class="container">
-      <div class="row">
-        <div class="col s12 l6 center">
-          <img src="public/images/me.jpg" class="circle responsive-image">
-        </div>
-        <div class="col s12 l6 card-panel" style="padding-left:20px;padding-right:20px;">
-          <h3>Who Am I?</h3>
-          <p>My name is Tryston, I’m a passionate and motivated full stack web developer looking for
-            work to fulfill my unending desire to build. I am devoted to constant
-            learning and creation. I understand most concepts and have real world
-            projects built from scratch! I communicate great with people and value
-            conversation & strategy before diving into any project. </p>
-            <h3>What Do I Do?</h3>
-            <p>As a Full Stack Web Developer, I mainly deal with all different types of technologies, which are listed below. But in short, tldr; I work with HTML5, CSS3, Javascript ES6+, frameworks, NodeJS and MongoDB to build highly scalable and dynamic websites online!</p>
-            <br>
-            <h5>Currently Know:</h5>
-            <div class="chip">HTML5</div>
-            <div class="chip">CSS3</div>
-            <div class="chip">Javascript ES6</div>
-            <div class="chip">Bootstrap 3</div>
-            <div class="chip">Materialize CSS</div>
-            <div class="chip">NodeJS</div>
-            <div class="chip">Express</div>
-            <div class="chip">NPM</div>
-            <div class="chip">Bash Command Line</div>
-            <div class="chip">MongoDB</div>
-            <div class="chip">Mongoose</div>
-            <div class="chip">Git</div>
-            <div class="chip">Github</div>
-            <div class="chip">AJAX</div>
-            <div class="chip">jQuery</div>
-            <div class="chip">Database Association</div>
-            <div class="chip">RESTful Routing</div>
-            <div class="chip">Authentication</div>
-            <div class="chip">Heroku</div>
-            <div class="chip">Visual Studio Code</div>
-            <br>
-            <h5>Currently Learning:</h5>
-            <div class="chip">Angular 5</div>
-            <div class="chip">React</div>
-            <div class="chip">PHP</div>
-            <div class="chip">Electron</div>
-            <div class="chip">MySQL</div>
-            <p>and more as time passess...</p>
-          <h3>Why Should You Care?</h3>
-          <p>Like many hard working devoted people out there, they have a passion for their craft. I have found my passion in Programming and Online Creation. I would love to share my skillset and devotion with your company.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section-break blue lighten-2 center white-text" id="portfolio">Portfolio</section>
- 
-  <!-- Portfolio -->
-
-  <section class="section section-portfolio grey lighten-2">
-    <div class="container">
-      <div class="row">
-
-        <!-- Boarditt -->
-
-        <div class="col s12 l6">
-          <div class="card large">
-            <div class="card-image">
-              <img src="https://i.imgur.com/jGCPttO.png" alt="">
-              <span class="card-title white black-text"><span class="card-title-text">Boarditt - Todo List WebApp (WiP)</span></span>
-            </div>
-            <div class="card-content">
-              <p>Todo List WebApp Work In Progress inspired by Google Keep. Features Boards, that contain one or more cards (lists) where users can add todos. Uses JS:ES7 Classes and DOM manipulation to insert HTML dynamically. Completely vanilla HTML, CSS, and Javascript. All hand coded.</p>
-            </div>
-            <div class="card-action">
-              <a href="/boarditt" target="_blank" class="see-site-btn"><i class="fa fa-globe"></i> See Full Site</a>
-              <a href="https://github.com/TrystonPerry/Boarditt---Todo-Time-Manager" target="_blank" class="see-github-btn"><i class="fab fa-github"></i> View Repository</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Github User API Search using JS:ES7 Syntax -->
-
-        <div class="col s12 l6">
-          <div class="card large">
-            <div class="card-image">
-              <img src="https://i.imgur.com/ITOWa9B.png" alt="">
-              <span class="card-title white black-text"><span class="card-title-text">Github User Search</span></span>
-            </div>
-            <div class="card-content">
-              <p>Single page Bootstrap 4 site that uses Javascript ES6 & ES7 Syntax to fetch Github User Info asynchronously. Just type a valid username in the search box and an event listener will call a fetch request to the Github API with that username as a parameter. Updates code instantaneously displaying user info and any corresponding repositories dynamically.</p>
-            </div>
-            <div class="card-action">
-              <a href="/github-search" target="_blank" class="see-site-btn"><i class="fa fa-globe"></i> See Full Site</a>
-              <a href="https://github.com/TrystonPerry/github-search" target="_blank" class="see-github-btn"><i class="fab fa-github"></i> View Repository</a>
-            </div>
-          </div>
-        </div>
-
-
-        <!-- CryptoMarketPlace -->
-
-        <div class="col s12 l6">
-          <div class="card large">
-            <div class="card-image">
-              <img src="https://i.imgur.com/7dULDEu.png" alt="">
-              <span class="card-title white black-text"><span class="card-title-text">CryptoMarketPlace</span></span>
-            </div>
-            <div class="card-content">
-              <p>WebApp that uses the Request.js to get top 100 cryptocurrency price information from API and display it in a bootstrap 4 styled table. Uses numbro.js to shorten numbers and modify number appearances based on value. Gets corresponding coin logo based on coin symbol from API. Create or login into an account to favorite certain cryptocurrencies using an AJAX Requests to send data without reloading the page.</p>
-            </div>
-            <div class="card-action">
-              <a href="https://crypto-marketplace.herokuapp.com/" target="_blank" class="see-site-btn"><i class="fa fa-globe"></i> See Full Site</a>
-              <a href="https://github.com/TrystonPerry/CryptoMarketplace" target="_blank" class="see-github-btn"><i class="fab fa-github"></i> View Repository</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- YelpCamp -->
-
-        <div class="col s12 l6">
-          <div class="card large">
-            <div class="card-image">
-              <img src="https://i.imgur.com/KctZdWV.jpg" alt="">
-              <span class="card-title white black-text"><span class="card-title-text">Yelp for Campgrounds</span></span>
-            </div>
-            <div class="card-content">
-              <p>YelpCamp is a website that implements RESTful Routing techniques. Features user account creation, login, get, post, update, and delete requests. Uses Bootstrap 3 for design, and stores data in a MongoDB non-relational database. All user-provided data is cleansed of any harmful data. And User passwords are never stored in plaintext, instead, are hashed using Passport.js.
-            </div>
-            <div class="card-action">
-              <a href="https://tryston-yelp-camp.herokuapp.com/" target="_blank" class="see-site-btn"><i class="fa fa-globe"></i> See Full Site</a>
-              <a href="https://github.com/TrystonPerry/Yelp-Camp" target="_blank" class="see-github-btn"><i class="fab fa-github"></i> View Repository</a>
-            </div>
-          </div>
-        </div>
-          
-        <!-- Blog Site -->
-
-        <div class="col s12 l6">
-          <div class="card large">
-            <div class="card-image">
-              <img src="https://i.imgur.com/75Tj7R3.png" alt="">
-              <span class="card-title white black-text"><span class="card-title-text">Blog Site</span></span>
-            </div>
-            <div class="card-content">
-              <p>Another RESTful Routing site centered around Blog Posts. Data is reset every day. Feel free to post something and watch it be added. Uses get, post, update, and delete requests on Node.js. My real blog can be found at <a href="https://blog.trystonperry.com" target="_blank" style="color:black;text-decoration:underline">blog.trystonperry.com.</a></p>
-            </div>
-            <div class="card-action">
-              <a href="https://tryston-blog.herokuapp.com" target="_blank" class="see-site-btn"><i class="fa fa-globe"></i> See Full Site</a>
-              <a href="https://github.com/TrystonPerry/Demo-Blog-App" target="_blank" class="see-github-btn"><i class="fab fa-github"></i> View Repository</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Me -->
-
-  <section class="section-break blue lighten-2 center white-text" id="contact">Contact</section>
-
-  <section class="section section-contact blue lighten-4">
-    <div class="container">
-      <div class="row">
-        <div class="col s12 l4 center">
-          <h4>Contact Me</h4>
-          <a href="mailto:Tryston@TrystonPerry.com" class="btn btn-large white black-text waves-effect waves-dark btn-hover"><i class="fa fa-envelope"></i>  Email Me</a>
-          <a href="https://linkedin.trystonperry.com" target="_blank" class="btn btn-large white black-text waves-effect waves-dark btn-hover"><i class="fab fa-linkedin"></i>  LinkedIn</a>
-        </div>
-        <div class="col s12 l4 center">
-          <h4>References</h4>
-          <a href="https://drive.google.com/file/d/1FZtPRpzmb2lFEUDZ7J5ItpxorI8vds_E/view?usp=sharing" target="_blank" class="btn btn-large white black-text waves-effect waves-dark btn-hover"><i class="fa fa-file-pdf"></i>  My Resume</a>
-          <a href="https://github.com/trystonperry11" target="_blank" class="btn btn-large white black-text waves-effect waves-dark btn-hover"><i class="fab fa-github"></i>  Github</a>
-        </div>   
-        <div class="col s12 l4 center">
-          <h4>Social Media</h4>
-          <a href="https://github.trystonperry.com" target="_blank" class="black-text"><i class="fab fa-github large" style="font-size:50px;margin-right:10px;"></i></a>
-          <a href="https://youtube.trystonperry.com" target="_blank" class="black-text"><i class="fab fa-youtube large" style="font-size:50px;margin-right:10px;"></i></a>
-          <a href="https://twitter.trystonperry.com" target="_blank" class="black-text"><i class="fab fa-twitter large" style="font-size:50px;margin-right:10px;"></i></a>
-          <a href="https://instagram.trystonperry.com" target="_blank" class="black-text"><i class="fab fa-instagram large" style="font-size:50px;"></i></a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-
-  <footer class="page-footer" style="padding-top:0">
-    <div class="footer-copyright  blue lighten-2">
-      <div class="container black-text">
-        Copyright Tryston Perry &copy; 2018
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    $(document).ready(function(){
-      $('.button-collapse').sideNav();
-    })
-  </script>
 </body>
 </html>
