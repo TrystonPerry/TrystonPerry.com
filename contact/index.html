@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tryston Perry | Contact</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="../public/stylesheets/main.css">
+  <link rel="stylesheet" href="../public/stylesheets/contact.css">
+</head>
+<body>
+  <div class="nav-list">
+    <div class="container">
+      <a href="/" id="brand" class="pointer">Tryston Perry</a>
+      <div class="nav-list-items" style="float:right">
+        <a href="http://resume.trystonperry.com" class="nav-list-item pointer">Resume</a>
+        <a href="/contact" class="nav-list-item pointer">Contact</a>
+      </div>
+      <button class="nav-list-menu">
+        <i class="material-icons" id="menu-btn">menu</i>
+      </button>
+      <div class="menu" style="display:none" id="menu">
+        <ul class="menu-list">
+          <li class="menu-list-item">
+            <a href="http://resume.trystonperry.com" class="pointer">Resume</a>
+          </li>
+          <li class="menu-list-item">
+            <a href="/contact" class="pointer">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <section class="section-contact">
+    <div class="container">
+      <form action="contact-form.php" method="POST" class="contact-form">
+        <h1 class="contact-title">Get in contact with me!</h1>
+        <div class="form-input">
+          <label for="email" class="label">*Your Email</label><br>
+          <input type="text" name="email" maxlength="80">
+        </div>
+        <div class="form-input">
+          <label for="subject" class="label">Subject Line</label><br>
+          <input type="text" name="subject" maxlength="80">
+        </div>
+        <div class="form-input">
+          <label for="message" class="label">*Message</label><br>
+          <textarea name="message" rows="10" maxlength="500"></textarea>
+        </div>
+        <input class="submit-btn" type="submit" name="submit" value="Submit">
+      </form>
+    </div>
+  </section>
+
+  <script src="../public/scripts/nav-menu.js"></script>
+</body>
+</html>

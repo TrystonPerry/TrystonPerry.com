@@ -3,10 +3,9 @@ const menu = document.getElementById('menu');
 
 let isMenuVisible = false;
 
-menuBtn.addEventListener('click', e => toggleMenu(e))
+menuBtn.addEventListener('click', () => toggleMenu())
 
-function toggleMenu(e) {
-  e.preventDefault();
+function toggleMenu() {
   if(isMenuVisible) {
     isMenuVisible = false;
     menu.style.display = 'none';

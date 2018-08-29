@@ -11,7 +11,7 @@
 }
 
 .circleZoomIn-play {
-  animation: 1s ease-in-out 0s 1 circleZoomIn;
+  animation: 750ms ease-in-out 0s 1 circleZoomIn;
   animation-fill-mode: forwards;
 }
 
@@ -37,9 +37,9 @@
   animation-name: play60;
 }
 
-body {
+body, .body {
   overflow-x: hidden;
-}
+} 
 
 .v-align {
   vertical-align: middle;
@@ -122,6 +122,14 @@ body {
   cursor: pointer;
   z-index: 99;
   position: relative;
+}
+
+.container {
+  overflow: hidden !important;
+}
+
+button:focus {
+  outline:none;
 }
 
 .menu {
@@ -222,7 +230,7 @@ body {
 }
 
 .section-skills {
-  margin-top: 600px;
+  margin-top: 100px;
   position: relative;
 }
 
@@ -250,10 +258,6 @@ body {
   left: 50%;
   transform: translateX(-50%);
   transition-duration: 200ms;
-}
-
-.skill:hover {
-  transform: translateX(-50%) scale(1.2);
 }
 
 .skill-icon {
@@ -371,6 +375,16 @@ body {
   color: grey;
 }
 
+.section-footer {
+  background: #0692FF;
+}
+
+@media screen and (max-width: 1600px) {
+  .background-circle-1 {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   .section-landing {
     animation: 1s ease-out 0s 1 fadeTextIn;
@@ -439,5 +453,26 @@ body {
   }
   .project-link {
     font-size: 4vw;
+  }
+  .project {
+    padding: 20px;
+  }
+  .project-title {
+    font-size: 12vw;
+  }
+  .contact-title {
+    font-size: 12vw;
+  }
+  .ending-cta {
+    font-size: 5vw;
+  }
+  .ending-cta i {
+    font-size: 5vw;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .menu {
+    display: none !important;
   }
 }
