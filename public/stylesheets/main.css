@@ -244,7 +244,7 @@ button:focus {
 }
 
 .skill-obj {
-  transform: scale(0);
+  
 }
 
 .skill {
@@ -281,6 +281,20 @@ button:focus {
   background: #F0F0F0;
   padding: 40px 60px;
   border-radius: 40px;
+}
+
+.project-sm {
+  background: #F0F0F0;
+  padding: 20px 20px;
+  border-radius: 20px;
+  width: 33%;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.project-sm-img {
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.493) 0px 0px 1px 1px;
 }
 
 .section-projects {
@@ -469,6 +483,16 @@ button:focus {
   .ending-cta i {
     font-size: 5vw;
   }
+  .project-sm {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .project-sm {
+    width: 100%;
+  }
+
 }
 
 @media screen and (min-width: 601px) {

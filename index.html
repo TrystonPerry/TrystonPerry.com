@@ -14,6 +14,9 @@
 </head>
 <body>
   <div class="body">
+
+    <!-- Landing Section -->
+
     <section class="section-landing">
       <div class="container">
         <div class="nav-list">
@@ -41,7 +44,7 @@
         <br><br>
         <div class="cta-btn">
           <a href="/contact" class="intro-cta" title="Email: Tryston@TrystonPerry.com">
-            Let's Talk!</a>
+            <i class="material-icons">email</i> Let's Talk!</a>
         </div>
         <br><br><br><br>
       </div>
@@ -51,9 +54,12 @@
       <img src="./public/images/circle.svg" class="background-circle-1">
     </div>
     
-  
+    <!-- Background Image -->
+
     <div class="background-img-solid"></div>
   
+    <!-- About Section -->
+
     <section class="section-about" id="about">
       <div class="container">
         <div class="about-card">
@@ -70,6 +76,8 @@
         </div>
       </div>
     </section>
+
+    <!-- Skills Section -->
   
     <section class="section-skills" id="skills">
       <div class="container">
@@ -77,6 +85,9 @@
           <h1 class="skills-title">Skills</h1>
           <hr>
           <br>
+
+          <!-- Skills -->
+
           <div class="skills row">
             <div class="skill-obj col-6 col-sm-4 col-md-3 col-lg-2">
               <div class="skill" style="background:rgb(255, 181, 96)">
@@ -173,12 +184,16 @@
         </div>
       </div>
     </section>
+
+    <!-- Projects Section -->
   
     <section class="section-projects" id="projects">
       <div class="container">
         <div class="projects-card">
           <h1 class="projects-title">Projects</h1>
+
           <hr>
+          
           <div class="project">
             <h1 class="project-title">Boarditt</h1>
             <div class="project-links">
@@ -191,11 +206,13 @@
             </div>
             <video class="project-video" src="./public/videos/Boarditt-Demo.mp4" loop controls></video>
             <p class="project-desc">
-              Boarditt is a simple, yet powerful Todo List WebApp. The front-end is built with <strong>Angular 5</strong>. Using components and services to neatly organize data handled from its back-end API. Most design is built from scratch with vanilla <strong>CSS</strong>, but also uses <strong>Bootstrap 4's</strong> grid system. The back-end uses <strong>Node.js, Express.js, and MongoDB</strong> to form an API for accessing user data like Boards, Lists, and Todos. When logging in or signing up, a user receives a <strong>hashed token</strong> that is then stored in the <strong>cookies</strong> to verify they are logged in. This token expires after some time. This token is used to access their personal data across the site.
+              Boarditt is a simple, yet powerful Todo List WebApp. The front-end is built with <strong>Angular 5</strong>. Using components and services to neatly organize data handled from its back-end API. Most design is built from scratch with vanilla <strong>CSS</strong>, but also uses <strong>Bootstrap 4's</strong> grid system. The back-end uses <strong>Node.js, Express.js, and MongoDB</strong> to form an API for accessing user data like Boards, Lists, and Todos. When logging in or signing 7up, a user receives a <strong>hashed token</strong> that is then stored in the <strong>cookies</strong> to verify they are logged in. This token expires after some time. This token is used to access their personal data across the site.
             </p>
           </div>
+
           <br><br><br>
-          <div class="project">
+
+          <!-- <div class="project">
             <h1 class="project-title">Crypto Marketplace</h1>
             <div class="project-links">
               <a href="https://github.com/TrystonPerry/CryptoMarketplace" class="project-link github-link" target="_blank">
@@ -210,25 +227,48 @@
               WebApp that uses the <strong>Request.js</strong> to get top 100 cryptocurrency price information from API and display it in a <strong>Bootstrap 4</strong> styled table. Uses numbro.js to shorten numbers and modify number appearances based on value. Gets corresponding coin logo based on coin symbol from API. Create or login into an account to favorite certain cryptocurrencies using an AJAX Requests to send data without reloading the page.
             </p>
           </div>
-          <br><br><br>
+
+          <br><br><br> -->
+
           <div class="project">
-            <h1 class="project-title">Github User Search</h1>
+            <h1 class="project-title">Webcam Snapshot</h1>
             <div class="project-links">
-              <a href="https://github.com/TrystonPerry/github-search" class="project-link github-link" target="_blank">
+              <a href="https://github.com/TrystonPerry/Webcam-Snapshot" class="project-link github-link" target="_blank">
                 <i class="fab fa-github"></i> View Repository
               </a>
-              <a class="project-link" style="margin: 0" href="https://www.trystonperry.com/github-search" target="_blank">
+              <a class="project-link" style="margin: 0" href="https://trystonperry.com/webcam-snapshot" target="_blank">
                 <i class="fa fa-globe"></i> View Website
               </a>
             </div>
-            <img src="./public/images/github-search-screenshot.PNG" class="project-video">
+            <img src="./public/images/webcam-snapshot.PNG" class="project-video">
             <p class="project-desc">
-              Single page <strong>Bootstrap 4</strong> site that uses <strong>Javascript ES6+ Syntax</strong> to fetch Github User Info <strong>asynchronously</strong>. Just type a valid username in the search box and an event listener will call a <strong>fetch request to the Github API</strong> with that username as a parameter. Updates code instantaneously displaying user info and any corresponding repositories dynamically.
+              Using the getUserMedia (gUM) API, this project grabs users' webcam stream and displays it. The user can then grab a snapshot from their webcam and it gets added to the list of screencaps.
             </p>
           </div>
+
+          <br><br><br>
+
+          <div class="project">
+            <h1 class="project-title">Ceaser Cipher</h1>
+            <div class="project-links">
+              <a href="https://github.com/TrystonPerry/Ceaser-Cipher" class="project-link github-link" target="_blank">
+                <i class="fab fa-github"></i> View Repository
+              </a>
+              <a class="project-link" style="margin: 0" href="https://trystonperry.com/ceaser-cipher" target="_blank">
+                <i class="fa fa-globe"></i> View Website
+              </a>
+            </div>
+            <img src="./public/images/ceaser-cipher.PNG" class="project-video">
+            <p class="project-desc">
+              Ceaser shift cipher converter. Encrypt or decrypt ciphers with any shift count (1-23). Uses the ascii values of letters to convert them to others.
+            </p>
+          </div>
+
         </div>
       </div>
     </section>
+
+    <!-- Contact Section -->
   
     <section class="section-contact">
       <div class="container">
@@ -238,7 +278,6 @@
     </section>
   
     <script src="./public/scripts/nav-menu.js"></script>
-    <script src="./public/scripts/skills.js"></script>
   </div>
 
   <section class="section-footer">
