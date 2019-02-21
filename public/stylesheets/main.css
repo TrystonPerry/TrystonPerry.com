@@ -277,10 +277,34 @@ button:focus {
   color: gray;
 }
 
-.project {
+.project-bg {
   background: #F0F0F0;
   padding: 40px 60px;
-  border-radius: 40px;
+}
+
+.project {
+  background: rgb(106, 143, 221);
+  width: 100%;
+  border-radius: 25px;
+  overflow: auto;
+  color: white;
+  display: flex;
+}
+
+.project-left {
+  width: 50%;
+  display: inline-block;
+  padding: 10px;
+  flex: 1;
+}
+
+.project-right {
+  flex: 1;
+  background: #326AE4;
+  width: 50%;
+  border-radius: 25px;
+  float: right;
+  padding: 10px;
 }
 
 .project-sm {
@@ -308,7 +332,10 @@ button:focus {
 
 .project-title {
   font-size: 50px;
-  display: inline-block;
+  border-bottom: 3px solid white;
+  width: 100%;
+  font-weight: bold;
+  padding: 0 10px;
 }
 
 .project-links {
@@ -349,8 +376,8 @@ button:focus {
 }
 
 .project-desc {
-  font-size: 20px;
-  margin-top: 10px;
+  font-size: 17px;
+  padding: 10px;
 }
 
 .section-contact {
@@ -468,9 +495,6 @@ button:focus {
   .project-link {
     font-size: 4vw;
   }
-  .project {
-    padding: 20px;
-  }
   .project-title {
     font-size: 12vw;
   }
@@ -490,6 +514,15 @@ button:focus {
 
 @media screen and (max-width: 1000px) {
   .project-sm {
+    width: 100%;
+  }
+  .project{ 
+    display: block;
+  }
+  .project-left{
+    width: 100%;
+  }
+  .project-right {
     width: 100%;
   }
 
