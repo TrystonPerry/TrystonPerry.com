@@ -26,7 +26,7 @@
             <a href="/contact" class="nav-list-item pointer">Contact</a>
           </div>
           <button class="nav-list-menu">
-            <i class="material-icons" id="menu-btn">menu</i>
+            <i class="material-icons" onclick="toggleMenu(event)" id="menu-btn">menu</i>
           </button>
           <div class="menu" style="display:none" id="menu">
             <ul class="menu-list">
@@ -285,21 +285,128 @@
   
     <section class="section-projects" id="projects">
 
-      <div class="project-bg" style="background:rgba(50, 106, 228, 0.25)">
+      <div class="project-bg" id="boarditt" style="background:#658FEB; z-index: 50;">
         <div class="container">
-          <div class="project">
-            <div class="project-left">
-              <div class="project-title">Boarditt</div>
-              <p class="project-desc">
-                Boarditt is a simple, yet powerful Todo List WebApp. The front-end is built with <strong>Angular 5</strong>. Using components and services to neatly organize data handled from its back-end API. Most design is built from scratch with vanilla <strong>CSS</strong>, but also uses <strong>Bootstrap 4's</strong> grid system. The back-end uses <strong>Node.js, Express.js, and MongoDB</strong> to form an API for accessing user data like Boards, Lists, and Todos. When logging in or signing 7up, a user receives a <strong>hashed token</strong> that is then stored in the <strong>cookies</strong> to verify they are logged in. This token expires after some time. This token is used to access their personal data across the site.
-              </p>
+          <div class="project row">
+            <div class="row">
+              <div class="project-left col-lg-6">
+                <div class="project-header">
+                  <img src="./public/images/Boarditt-Logo-Bold.png" class="project-logo" alt="">
+                  <div class="project-title">Boarditt</div>
+                </div> 
+                <p class="project-desc">
+                  Boarditt is a simple, yet powerful Todo List WebApp. The front-end is built with <strong>Angular 5</strong>. Using components and services to neatly organize data handled from its back-end API. Most design is built from scratch with vanilla <strong>CSS</strong>, but also uses <strong>Bootstrap 4's</strong> grid system. The back-end uses <strong>Node.js, Express.js, and MongoDB</strong> to form an API for accessing user data like Boards, Lists, and Todos. When logging in or signing up, a user receives a <strong>hashed token</strong> that is then stored in the <strong>cookies</strong> to verify they are logged in. This token expires after some time. This token is used to access their personal data across the site.
+                </p>
+                <div class="project-skills">
+                    <h5>Tech Used</h5>
+                    <div class="project-skill html-color">
+                      <img src="./public/images/html5.svg" alt="">
+                    </div>
+                    <div class="project-skill css-color">
+                      <img src="./public/images/css3.svg" alt="">
+                    </div>
+                    <div class="project-skill javascript-color">
+                      <img src="./public/images/javascript.png" alt="">
+                    </div>
+                    <div class="project-skill angular-color">
+                      <img src="./public/images/angular.svg" alt="">
+                    </div>
+                    <div class="project-skill bootstrap-color">
+                      <img src="./public/images/bootstrap.svg" alt="">
+                    </div>
+                    <div class="project-skill nodejs-color">
+                      <img src="./public/images/nodejs.png" alt="">
+                    </div>
+                    <div class="project-skill express-color">
+                      <img src="./public/images/express.png" alt="">
+                    </div>
+                    <div class="project-skill mongo-color">
+                      <img src="./public/images/mongodb.png" alt="">
+                    </div>
+                    <div class="project-skill heroku-color">
+                      <img src="./public/images/heroku.png" alt="">
+                    </div>
+                    <div class="project-skill firebase-color">
+                      <img src="./public/images/firebase.png" alt="">
+                    </div>
+                </div>
+              </div>
+              <div class="project-right col-lg-6">
+                <div class="project-showcase">
+                  <video autoplay muted loop class="project-video" id="myVideo">
+                    <source src="./public/videos/Boarditt-Demo.mp4" type="video/mp4">
+                  </video>
+                  <div class="project-links">
+                    <a class="project-link website-link" href="https://boarditt.com"  target="_blank" title="View Website">
+                      <i class="fa fa-globe website-link-icon"></i>
+                    </a>
+                    <a class="project-link github-link" href="https://github.com/trystonperry/boarditt-frontend" target="_blank" title="View Front-End Repo">
+                      <i class="fab fa-github github-link-icon"></i>
+                    </a>
+                    <a class="project-link github-link" href="https://github.com/trystonperry/boarditt-backend" target="_blank" title="View Back-End Repo">
+                      <i class="fab fa-github github-link-icon"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="project-right">
-              
+            <a href="#!" onclick="viewMore(event)" class="view-more">
+              View More
+              <i class="fas fa-arrow-down"></i>
+            </a>
+            <div class="hidden">
+              <div class="row">
+                <div class="project-left col-lg-5">
+                  <div class="project-showcase">
+                    <img src="./public/images/boarditt-screenshot-1.PNG" class="project-screenshot" alt="">
+                  </div>
+                </div>
+                <div class="project-right col-lg-7">
+                  <h3>What is it?</h3>
+                  <p class="project-desc">
+                    Boarditt is inspired by Googles online todo list app called Google Keep. It allows you to create online sticky notes and lists to organize your tasks in one place. Much like Trello. However, Boarditt features multiple ways to organize your todos more specifically. After signing up, you can create your first board. A board is a project or domain of your life that contains its own todos. Within that board, you can create sub-goals to complete that board. These are called lists. Lists are as they sound, they are a list of individual todos. A todo item is a simple objective for your smaller goal (list). You can check it as done when completing a todo and move onto the others.
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="project-left col-lg-7">
+                  <h3>Front-End Design</h3>
+                  <p class="project-desc">
+                    Boarditt uses <strong>Angular</strong> for the front-end site at <a href="https://boarditt.com">Boarditt.com</a>. It features a landing page, login, signup, and home page. The site accesses the private back-end API to create an <strong>asynchronous single page app</strong>. Since it also features accounts, the design uses cookies to store a temporary <strong>login token</strong> to access the users' account. Boards, lists, and todos are fetched when loading the dashboard and each is created as its own <strong>Angular component</strong>. <strong>Angular services</strong> are used to access API routes across the site.
+                  </p>
+                </div>
+                <div class="project-right col-lg-5">
+                  <div class="project-showcase">
+                    <img src="./public/images/boarditt-screenshot-2.PNG" class="project-screenshot" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="project-left col-lg-5">
+                  <div class="project-showcase">
+                    <img src="./public/images/boarditt-screenshot-3.PNG" class="project-screenshot" alt="">
+                  </div>
+                </div>
+                <div class="project-right col-lg-7">
+                  <h3>Back-End Design</h3>
+                  <p class="project-desc">
+                    Boarditt back-end uses <strong>Node.js and Express.js</strong> to host a private API. It features <strong>GET, POST, PUT, and DELETE</strong> request routes for accessing boards, lists, and todos. Board, list, and todo data are stored in a Mongoose model. This mongoose model holds all type of data a board, list, or todo would need. Things like title and color. All user data is stored using a <strong>MongoDB</strong> database. Almost all requests to the back-end API are required to receive a user access token to verify who is accessing what data. Otherwise, anyone could access anyone's data.
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <a href="https://boarditt.com" target="_blank" class="view-site">
+                  <i class="fa fa-globe"></i>
+                  <p>View Website</p>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
+      <!-- <div class="project-bg" style="background:rgb(204, 34, 204);height:300px; z-index: 49;"></div> -->
+
     </section>
 
     <!-- Contact Section -->
@@ -307,7 +414,8 @@
     <section class="section-contact">
       <div class="container">
         <h1 class="contact-title">Like what you see?</h1>
-        <a href="/contact" class="ending-cta"><i class="material-icons">email</i>Let's Talk!</a>
+        <a href="/contact" class="ending-cta">
+          <i class="material-icons">email</i>Let's Talk!</a>
       </div>
     </section>
   

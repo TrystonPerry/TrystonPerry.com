@@ -18,10 +18,78 @@
 @keyframes fadeTextIn {
   0% {
     opacity: 0;
+    transform: translate(0, -500px);
   }
   100% {
     opacity: 1;
   }
+}
+
+.fadeInText-play {
+  animation: 500ms ease-in-out 0s 1 fadeTextIn;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeOutText {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+    transform: translate(0, 500px);
+  }
+}
+
+.fadeOutText-play {
+  animation: 500ms ease-in-out 0s 1 fadeOutText;
+  animation-fill-mode: forwards;
+}
+
+@keyframes floatVideo {
+  0% {
+    transform: scale(1);
+    box-shadow: 0px 0px 10px 1px black;
+  }
+  50% {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 20px 1px black;
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0px 0px 10px 1px black;
+  }
+}
+
+.floatVideo-play {
+  animation: 5s linear 2s infinite floatVideo;
+}
+
+@keyframes dragDown {
+  0% {
+    transform: translate(0, -200px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.dragDown-play {
+  animation: 250ms ease-in-out 0s 1 dragDown;
+  animation-fill-mode: forwards;
+}
+
+@keyframes dragUp {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, -200px);
+  }
+}
+
+.dragDownReverse-play {
+  animation: 250ms ease-in-out 0s 1 dragUp;
 }
 
 @keyframes play60 {
@@ -129,7 +197,7 @@ body, .body {
 }
 
 button:focus {
-  outline:none;
+  outline:0;
 }
 
 .menu {
@@ -280,31 +348,68 @@ button:focus {
 .project-bg {
   background: #F0F0F0;
   padding: 40px 60px;
+  box-shadow: inset 0 10px 15px -8px #000;
+  padding: 75px 0;
 }
 
 .project {
-  background: rgb(106, 143, 221);
+  color: white;
+  padding: 10px;
+}
+
+.project-screenshot {
   width: 100%;
   border-radius: 25px;
-  overflow: auto;
-  color: white;
-  display: flex;
 }
 
 .project-left {
   width: 50%;
   display: inline-block;
   padding: 10px;
-  flex: 1;
+  /* flex: 1; */
 }
 
-.project-right {
-  flex: 1;
+.project-showcase {
+  /* flex: 1; */
   background: #326AE4;
-  width: 50%;
+  position: relative;
   border-radius: 25px;
   float: right;
   padding: 10px;
+  margin: 25px 0;
+  box-shadow: 0px 0px 10px 1px black;
+}
+
+.view-more {
+  color: white;
+  text-decoration: underline;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 20px;
+  margin-top: 10px;
+  transition-duration: 200ms;
+}
+
+.hidden {
+  display: none;
+}
+
+.project-skills {
+  width: 100%;
+}
+
+.project-skill {
+  display: inline-block;
+  background: white;
+  padding: 7px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: 3px;
+}
+
+.project-skill img {
+  width: 25px;
 }
 
 .project-sm {
@@ -330,26 +435,49 @@ button:focus {
   text-align: center;
 }
 
-.project-title {
-  font-size: 50px;
+.project-header {
   border-bottom: 3px solid white;
-  width: 100%;
-  font-weight: bold;
   padding: 0 10px;
 }
 
-.project-links {
+.project-title {
+  font-size: 50px;
+  font-weight: bold;
   display: inline-block;
-  float: right;
+  vertical-align: middle
+}
+
+.project-logo {
+  max-width: 50px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.project-links {
+  position: absolute;
+  margin: 0 auto;
+  text-align: center;
+  bottom: -20px;
+  min-width: 95%;
 }
 
 .project-link {
-  float: right;
+  position: relative;
   font-size: 25px;
-  margin-left: 20px;
   padding: 10px;
   transition-duration: 200ms;
-  border-radius: 15px;
+  border-radius: 50%;
+  background: black;
+  width: 45px; height: 45px;
+  display: inline-block;
+}
+
+.project-link i {
+  margin: 0;
+  position: absolute;
+  left: 24%;
+  font-size: 24px !important;
 }
 
 .project-link:hover {
@@ -358,21 +486,64 @@ button:focus {
   background: #007BFF;
 }
 
+.view-site {
+  background: #326AE4;
+  color: white;
+  padding: 30px;
+  font-size: 24px;
+  border-radius: 25px;
+  text-align: center;
+  margin: 0 auto;
+  transition-duration: 200ms;
+}
+
+.view-site i {
+  display: inline-block;
+}
+
+.view-site p {
+  display: inline-block;
+  margin: 0;
+}
+
+.view-site:hover {
+  color: white;
+  text-decoration: none;
+  box-shadow: 0px 0px 10px 1px black;
+  transform: scale(1.05);
+}
+
+.website-link {
+  background: #007BFF;
+}
+
+.website-link-icon {
+  color: white !important;
+}
+
+.website-link:hover {
+  transform: scale(1.1);
+  box-shadow: rgba(0, 0, 0, 0.493) 0px 0px 5px
+}
+
 .github-link {
-  color: purple;
+  background: purple !important;
+}
+
+.github-link-icon {
+  color: white !important;
 }
 
 .github-link:hover {
-  color: white;
-  text-decoration: none;
-  background: purple;
+  transform: scale(1.1);
+  box-shadow: rgba(0, 0, 0, 0.493) 0px 0px 5px;
 }
 
 .project-video {
   height: auto;
   width: 100% !important;
-  margin: 20px 0px;
-  box-shadow: 0px 0px 10px 1px black;
+  margin: 0;
+  border-radius: 25px;
 }
 
 .project-desc {
@@ -403,6 +574,7 @@ button:focus {
   padding: 20px 30px;
   border-radius: 10px; 
   font-size: 40px;
+  transition-duration: 200ms;
 }
 
 .ending-cta i {
@@ -412,13 +584,30 @@ button:focus {
 }
 
 .ending-cta:hover {
-  box-shadow: 0px 0px 10px 0px black;
   color: grey;
+  box-shadow: 0px 0px 10px 1px black;
+  transform: scale(1.5);
 }
 
 .section-footer {
   background: #0692FF;
 }
+
+.html-color { background: #FFB560 }
+.css-color { background: #32C4E9 }
+.javascript-color { background: #F0DB4F }
+.angular-color { background: #E63D45 }
+.bootstrap-color { background: #563D7C }
+.npm-color { background: #CC3534 }
+.node-color { background: #C2FD75 }
+.express-color { background: #FFFFFF }
+.mongo-color { background: #BEF8A3 }
+.mysql-color { background: #3765AF }
+.heroku-color { background: #681F78 }
+.firebase-color { background: #CC770C }
+.vscode-color { background: #0179CF }
+.photoshop-color { background: #81BBFB }
+.illustrator-color { background: #FFAF3A }
 
 @media screen and (max-width: 1600px) {
   .background-circle-1 {
@@ -466,19 +655,6 @@ button:focus {
   .section-skills {
     margin-top: 50px;
   }
-  .project-title {
-    width: 100% !important;
-  }
-  .project-links {
-    float: left;
-    text-align: center;
-  }
-  .project-link {
-    float: left;
-    font-size: 3vw;
-    text-align: center;
-    margin: 0;
-  }
 }
 
 @media screen and (max-width: 600px) {
@@ -522,14 +698,27 @@ button:focus {
   .project-left{
     width: 100%;
   }
-  .project-right {
+  .project-showcase {
     width: 100%;
   }
 
 }
 
+@media screen and (max-width: 991px){
+  
+}
+
 @media screen and (min-width: 601px) {
   .menu {
     display: none !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .project-bg {
+    padding: 40px 0px;
+  }
+  .project-skills {
+    text-align: center;
   }
 }
