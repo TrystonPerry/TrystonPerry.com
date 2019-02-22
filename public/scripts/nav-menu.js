@@ -31,3 +31,8 @@ function viewMore(e) {
   div.style.display = 'block';
   div.classList.add('fadeInText-play');
 }
+
+let body = document.getElementById('body');
+setTimeout(() => {
+  document.getElementById('body').style.display = 'block';
+}, 250)

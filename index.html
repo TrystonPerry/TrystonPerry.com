@@ -13,7 +13,7 @@
   <title>Tryston Perry</title>
 </head>
 <body>
-  <div class="body">
+  <div class="body" id="body" style="display:none">
 
     <!-- Landing Section -->
 
@@ -25,7 +25,7 @@
             <a href="http://resume.trystonperry.com" class="nav-list-item pointer">Resume</a>
             <a href="/contact" class="nav-list-item pointer">Contact</a>
           </div>
-          <button class="nav-list-menu">
+          <button class="nav-list-menu" style="outline:none">
             <i class="material-icons" onclick="toggleMenu(event)" id="menu-btn">menu</i>
           </button>
           <div class="menu" style="display:none" id="menu">
@@ -285,6 +285,8 @@
   
     <section class="section-projects" id="projects">
 
+      <h1 class="projects-title">Projects</h1>
+
       <div class="project-bg" id="boarditt" style="background:#658FEB; z-index: 50;">
         <div class="container">
           <div class="project row">
@@ -405,6 +407,55 @@
         </div>
       </div>
 
+      <div class="project-bg" id="boarditt" style="background:#5198E4; z-index: 50;">
+          <div class="container">
+            <div class="project row">
+              <div class="row">
+                <div class="project-left col-lg-6">
+                  <div class="project-header">
+                    <img src="./public/images/bubble-logo.PNG" style="border-radius:10px;" class="project-logo" alt="">
+                    <div class="project-title">Bubble.js</div>
+                  </div> 
+                  <p class="project-desc">
+                    Open source <strong>Javascript</strong> library that takes <strong>HTML</strong> elements and pushes them accross the screen horizontally and vertically. The javascript file can be downloaded manually, cloned, or fetched via a script tag. If you download manually, there are tons of variables to customize bubble position data to your own liking. The github readme also features documentation so a user can easily figure out how the project works.
+                  </p>
+                  <div class="project-skills">
+                    <h5>Tech Used</h5>
+                    <div class="project-skill html-color">
+                      <img src="./public/images/html5.svg" alt="">
+                    </div>
+                    <div class="project-skill css-color">
+                      <img src="./public/images/css3.svg" alt="">
+                    </div>
+                    <div class="project-skill javascript-color">
+                      <img src="./public/images/javascript.png" alt="">
+                    </div>
+                    <div class="project-skill bootstrap-color">
+                      <img src="./public/images/bootstrap.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="project-right col-lg-6">
+                  <div class="project-showcase" style="background:#5198E4">
+                    <img src="./public/images/bubble-screenshot.PNG" class="project-screenshot" alt="">
+                    <div class="project-links">
+                      <a class="project-link website-link" href="https://trystonperry.com/bubble.js"  target="_blank" title="View Website">
+                        <i class="fa fa-globe website-link-icon"></i>
+                      </a>
+                      <a class="project-link github-link" href="https://github.com/trystonperry/bubble.js" target="_blank" title="View Front-End Repo">
+                        <i class="fab fa-github github-link-icon"></i>
+                      </a>
+                      <a class="project-link github-link" style="background:rgb(68, 65, 65) !important" href="https://github.com/TrystonPerry/bubble.js/blob/master/README.md" target="_blank" title="View Documentation">
+                        <i class="fas fa-file-alt" style="text-align:center; color: white;"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       <!-- <div class="project-bg" style="background:rgb(204, 34, 204);height:300px; z-index: 49;"></div> -->
 
     </section>
@@ -418,14 +469,49 @@
           <i class="material-icons">email</i>Let's Talk!</a>
       </div>
     </section>
+
+    <section class="section-footer">
+        <div class="links">
+            <a href="https://twitter.trystonperry.com">
+              <i class="fab fa-twitter"></i>
+              Twitter
+            </a>
+            <a href="https://linkedin.trystonperry.com">
+              <i class="fab fa-linkedin"></i>
+              LinkedIn
+            </a>
+            <a href="https://trystonperry.com/contact">
+               <i class="fas fa-paper-plane"></i>
+               Contact
+            </a>
+            <a href="https://resume.trystonperry.com">
+              <i class="fas fa-file"></i>
+              Resume
+            </a>
+            <a href="https://github.trystonperry.com">
+              <i class="fab fa-github"></i>
+              Github
+            </a>
+          </div>
+        <p>Copyright © <span id="date"></span> Tryston Perry</p>
+      </section>
+    
+      <div class="contact fromSide-play">
+        <a href="/contact" class="contact-btn">
+          <i class="fas fa-paper-plane" style="font-size: 32px;"></i>
+          <p id="contact-text" style="display:inline-block; margin: 0; font-size: 32px;padding:0 10px;">Contact</p>
+        </a>
+      </div>
   
     <script src="./public/scripts/nav-menu.js"></script>
   </div>
 
-  <section class="section-footer">
-
-  </section>
+  
 
   <script src="./public/scripts/bubble.js"></script>
+  <script>
+    const span = document.getElementById('date');
+    span.innerHTML = (new Date()).getFullYear();
+  </script>
 </body>
 </html>
