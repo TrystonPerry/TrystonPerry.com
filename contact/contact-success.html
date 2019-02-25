@@ -9,29 +9,52 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="../public/stylesheets/main.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   <link rel="stylesheet" href="../public/stylesheets/contact.css">
 </head>
 <body>
   <div class="nav-list">
     <div class="container">
-      <a href="/" id="brand" class="pointer">Tryston Perry</a>
-      <div class="nav-list-items" style="float:right">
-        <a href="https://resume.trystonperry.com" class="nav-list-item pointer">Resume</a>
-        <a href="/" class="nav-list-item pointer">Home</a>
-      </div>
-      <button class="nav-list-menu" style="outline:none">
-        <i class="material-icons" onclick="toggleMenu(event)" id="menu-btn">menu</i>
-      </button>
-      <div class="menu" style="display:none" id="menu">
-        <ul class="menu-list">
-          <li class="menu-list-item">
-            <a href="https://resume.trystonperry.com" class="pointer">Resume</a>
-          </li>
-          <li class="menu-list-item">
-            <a href="/" class="pointer">Home</a>
-          </li>
-        </ul>
-      </div>
+        <a href="/" id="brand" class="pointer">Tryston Perry</a>
+        <div class="nav-list-items" style="float:right">
+          <a href="https://medium.com/@trystonperry" class="nav-list-item pointer">
+            <i class="fab fa-medium"></i>
+            Blog
+          </a>
+          <a href="http://resume.trystonperry.com" class="nav-list-item pointer">
+            <i class="fa fa-file"></i>
+            Resume
+          </a>
+          <a href="/contact" class="nav-list-item pointer">
+            <i class="fa fa-paper-plane"></i>
+            Contact
+          </a>
+        </div>
+        <button class="nav-list-menu" style="outline:none">
+          <i class="material-icons" onclick="toggleMenu(event)" id="menu-btn">menu</i>
+        </button>
+        <div class="menu" style="display:none" id="menu">
+          <ul class="menu-list">
+            <li class="menu-list-item">
+              <a href="https://medium.com/@trystonperry" class="pointer">
+                <i class="fab fa-medium"></i>
+                Blog
+              </a>
+            </li>
+            <li class="menu-list-item">
+              <a href="http://resume.trystonperry.com" class="pointer">
+                <i class="fa fa-file"></i>
+                Resume
+              </a>
+            </li>
+            <li class="menu-list-item">
+              <a href="/contact" class="pointer">
+                <i class="fa fa-paper-plane"></i>
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
     </div>
   </div>
 
@@ -41,6 +64,36 @@
       <p style="font-size: 30px;">Thanks! I'll be in touch soon.</p>
     </div>
   </section>
+
+  <section class="section-footer" style="position:absolute;bottom:0;">
+      <div class="links">
+          <a href="https://twitter.trystonperry.com">
+            <i class="fab fa-twitter"></i>
+            Twitter
+          </a>
+          <a href="https://linkedin.trystonperry.com">
+            <i class="fab fa-linkedin"></i>
+            LinkedIn
+          </a>
+          <a href="https://trystonperry.com/contact">
+              <i class="fas fa-paper-plane"></i>
+              Contact
+          </a>
+          <a href="https://resume.trystonperry.com">
+            <i class="fas fa-file"></i>
+            Resume
+          </a>
+          <a href="https://github.trystonperry.com">
+            <i class="fab fa-github"></i>
+            Github
+          </a>
+        </div>
+      <p>Copyright © <span id="date"></span> Tryston Perry</p>
+      <script>
+          const span = document.getElementById('date');
+          span.innerHTML = (new Date()).getFullYear();
+        </script>
+    </section>
 
   <script src="../public/scripts/nav-menu.js"></script>
 </body>

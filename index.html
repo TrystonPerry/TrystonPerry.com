@@ -22,8 +22,18 @@
         <div class="nav-list">
           <a href="/" id="brand" class="pointer">Tryston Perry</a>
           <div class="nav-list-items" style="float:right">
-            <a href="http://resume.trystonperry.com" class="nav-list-item pointer">Resume</a>
-            <a href="/contact" class="nav-list-item pointer">Contact</a>
+            <a href="https://medium.com/@trystonperry" class="nav-list-item pointer">
+              <i class="fab fa-medium"></i>
+              Blog
+            </a>
+            <a href="http://resume.trystonperry.com" class="nav-list-item pointer">
+              <i class="fa fa-file"></i>
+              Resume
+            </a>
+            <a href="/contact" class="nav-list-item pointer">
+              <i class="fa fa-paper-plane"></i>
+              Contact
+            </a>
           </div>
           <button class="nav-list-menu" style="outline:none">
             <i class="material-icons" onclick="toggleMenu(event)" id="menu-btn">menu</i>
@@ -31,10 +41,22 @@
           <div class="menu" style="display:none" id="menu">
             <ul class="menu-list">
               <li class="menu-list-item">
-                <a href="http://resume.trystonperry.com" class="pointer">Resume</a>
+                <a href="https://medium.com/@trystonperry" class="pointer">
+                  <i class="fab fa-medium"></i>
+                  Blog
+                </a>
               </li>
               <li class="menu-list-item">
-                <a href="/contact" class="pointer">Contact</a>
+                <a href="http://resume.trystonperry.com" class="pointer">
+                  <i class="fa fa-file"></i>
+                  Resume
+                </a>
+              </li>
+              <li class="menu-list-item">
+                <a href="/contact" class="pointer">
+                  <i class="fa fa-paper-plane"></i>
+                  Contact
+                </a>
               </li>
             </ul>
           </div>
@@ -456,13 +478,54 @@
           </div>
         </div>
 
-      <!-- <div class="project-bg" style="background:rgb(204, 34, 204);height:300px; z-index: 49;"></div> -->
+      <div class="project-bg" style="background:rgb(34, 180, 202);">
+        <div class="container">
+          <div class="project row">
+            <div class="project-left col-lg-6">
+              <div class="project-header">
+                <img src="./public/images/themodernnode.jpg" style="border-radius:10px;" class="project-logo" alt="">
+                <div class="project-title" id="tmn-title">The Modern Node</div>
+              </div> 
+              <p class="project-desc">
+                I love programming and teaching. So logically, I made and now run a Youtube channel designed to teach people Web Development technologies from scratch. Taking large scale ideas and explaining them in ways understandable to ordinary people. I launched my first series on the channel called <strong>Javascript From Scratch</strong>. Where I built a simple front-end <strong>Javascript</strong> CRUD app. My latest video as seen here, is of me attempting to build a survey using Google Sheets without any experience with it.
+              </p>
+              <div class="project-skills">
+                <h5>Tech Used</h5>
+                <div class="project-skill html-color">
+                  <img src="./public/images/html5.svg" alt="">
+                </div>
+                <div class="project-skill css-color">
+                  <img src="./public/images/css3.svg" alt="">
+                </div>
+                <div class="project-skill javascript-color">
+                  <img src="./public/images/javascript.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="project-right col-lg-6">
+              <div class="project-showcase" style="background:#5198E4; width:100%;">
+                <div class="embed-responsive embed-responsive-16by9" style="border-radius:25px">
+                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ZFCiM3RjzQM" allowfullscreen></iframe>
+                </div>
+                <div class="project-links">
+                  <a class="project-link website-link" href="https://www.youtube.com/channel/UC52bD3Dz4mcULZtakopsSwA"  target="_blank" style="background:#FF0000;" title="View YouTube Channel">
+                    <i class="fab fa-youtube website-link-icon" style="transform:translate(-2px);"></i>
+                  </a>
+                  <a class="project-link github-link" href="https://github.com/TrystonPerry/my-survey" target="_blank" title="View Repo">
+                    <i class="fab fa-github github-link-icon"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
     </section>
 
     <!-- Contact Section -->
   
-    <section class="section-contact">
+    <section class="section-contact" id="contact">
       <div class="container">
         <h1 class="contact-title">Like what you see?</h1>
         <a href="/contact" class="ending-cta">
@@ -470,31 +533,35 @@
       </div>
     </section>
 
-    <section class="section-footer">
-        <div class="links">
-            <a href="https://twitter.trystonperry.com">
-              <i class="fab fa-twitter"></i>
-              Twitter
-            </a>
-            <a href="https://linkedin.trystonperry.com">
-              <i class="fab fa-linkedin"></i>
-              LinkedIn
-            </a>
-            <a href="https://trystonperry.com/contact">
-               <i class="fas fa-paper-plane"></i>
-               Contact
-            </a>
-            <a href="https://resume.trystonperry.com">
-              <i class="fas fa-file"></i>
-              Resume
-            </a>
-            <a href="https://github.trystonperry.com">
-              <i class="fab fa-github"></i>
-              Github
-            </a>
-          </div>
-        <p>Copyright © <span id="date"></span> Tryston Perry</p>
-      </section>
+    <section class="section-footer" style="box-shadow: rgb(0, 0, 0) 0px 10px 15px -8px inset;">
+      <div class="links">
+          <a href="https://twitter.trystonperry.com">
+            <i class="fab fa-twitter"></i>
+            Twitter
+          </a>
+          <a href="https://linkedin.trystonperry.com">
+            <i class="fab fa-linkedin"></i>
+            LinkedIn
+          </a>
+          <a href="https://trystonperry.com/contact">
+              <i class="fas fa-paper-plane"></i>
+              Contact
+          </a>
+          <a href="https://resume.trystonperry.com">
+            <i class="fas fa-file"></i>
+            Resume
+          </a>
+          <a href="https://github.trystonperry.com">
+            <i class="fab fa-github"></i>
+            Github
+          </a>
+        </div>
+      <p>Copyright © <span id="date"></span> Tryston Perry</p>
+      <script>
+          const span = document.getElementById('date');
+          span.innerHTML = (new Date()).getFullYear();
+        </script>
+    </section>
     
       <div class="contact fromSide-play">
         <a href="/contact" class="contact-btn">
@@ -509,9 +576,6 @@
   
 
   <script src="./public/scripts/bubble.js"></script>
-  <script>
-    const span = document.getElementById('date');
-    span.innerHTML = (new Date()).getFullYear();
-  </script>
+  <script src="./public/scripts/youtube.js"></script>
 </body>
 </html>
