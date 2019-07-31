@@ -20,7 +20,10 @@
     <section class="section-landing">
       <div class="container">
         <div class="nav-list">
-          <a href="/" id="brand" class="pointer">Tryston Perry</a>
+          <a href="/" id="brand" class="pointer">
+            <i class="fa fa-code"></i>
+            Tryston Perry
+          </a>
           <div class="nav-list-items" style="float:right">
             <a href="https://medium.com/@trystonperry" class="nav-list-item pointer">
               <i class="fab fa-medium"></i>
@@ -29,10 +32,6 @@
             <a href="http://resume.trystonperry.com" class="nav-list-item pointer">
               <i class="fa fa-file"></i>
               Resume
-            </a>
-            <a href="/contact" class="nav-list-item pointer">
-              <i class="fa fa-paper-plane"></i>
-              Contact
             </a>
           </div>
           <button class="nav-list-menu" style="outline:none">
@@ -52,12 +51,6 @@
                   Resume
                 </a>
               </li>
-              <li class="menu-list-item">
-                <a href="/contact" class="pointer">
-                  <i class="fa fa-paper-plane"></i>
-                  Contact
-                </a>
-              </li>
             </ul>
           </div>
         </div>
@@ -65,8 +58,8 @@
         <h3 class="intro-caption">Full Stack Web Developer</h3>
         <br><br>
         <div class="cta-btn">
-          <a href="/contact" class="intro-cta" title="Email: Tryston@TrystonPerry.com">
-            <i class="material-icons">email</i> Let's Talk!</a>
+          <a href="mailto:tryston@trystonperry.com" class="intro-cta" title="Email: Tryston@TrystonPerry.com">
+            <i class="fas fa-paper-plane"></i> Let's Talk!</a>
         </div>
         <br><br><br><br>
       </div>
@@ -86,13 +79,18 @@
       <div class="container">
         <div class="about-card">
           <h1 class="about-title">About</h1>
-          <p class="about-desc">My name is Tryston, I’m a passionate and motivated web developer looking for work to fulfill my unending desire to build. I am devoted to constant learning and creation. I understand advanced concepts and have real world projects built from scratch.</p>
+          <p class="about-desc">My name is Tryston. I'm passionate about design, front-end, back-end, and WebRTC.
+            Harnessing utilities like Photoshop, Figma, Vue.js, Node.js and MongoDB to fulfill my
+            unending desire to build full-stack web-apps from inception to production.</p>
           <section class="section-links">
             <a href="https://linkedin.com/in/trystonperry" title="Linkedin" class="linkedin" target="_blank">
               <i class="fab fa-linkedin"></i>
             </a>
             <a href="https://github.com/trystonperry" title="Github" class="github" target="_blank">
               <i class="fab fa-github"></i>
+            </a>
+            <a href="https://twitter.com/trystonperry" title="Twitter" class="twitter" target="_blank">
+              <i class="fab fa-twitter"></i>
             </a>
           </section>
         </div>
@@ -136,15 +134,15 @@
               </span>
             </div>
             <div class="bubble bubble-4">
-              <img src="./public/images/bootstrap.svg" class="bubble-img" alt="">
+              <img src="./public/images/vuejs.png" class="bubble-img" alt="">
               <span class="bubble-tooltip">
-                <p class="bubble-tooltip-text">Bootstrap</p>
+                <p class="bubble-tooltip-text">Vue.js</p>
               </span>
             </div>
             <div class="bubble bubble-5">
-              <img src="./public/images/npm.png" class="bubble-img" alt="">
+              <img src="./public/images/webrtc.png" class="bubble-img" alt="">
               <span class="bubble-tooltip">
-                <p class="bubble-tooltip-text">NPM</p>
+                <p class="bubble-tooltip-text">WebRTC</p>
               </span>
             </div>
             <div class="bubble bubble-6">
@@ -184,9 +182,9 @@
               </span>
             </div>
             <div class="bubble bubble-12">
-              <img src="./public/images/vscode.png" class="bubble-img" alt="">
+              <img src="./public/images/socketio.png" class="bubble-img" alt="">
               <span class="bubble-tooltip">
-                <p class="bubble-tooltip-text">VS Code</p>
+                <p class="bubble-tooltip-text">Socket.io</p>
               </span>
             </div>
             <div class="bubble bubble-13">
@@ -224,10 +222,22 @@
               <p class="skill-name">Javascript</p>
             </div>
             <div class="skill-obj col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="skill mongo-color">
+                <img src="./public/images/vuejs.png" alt="" class="skill-icon">
+              </div>
+              <p class="skill-name">Vue.js</p>
+            </div>
+            <div class="skill-obj col-6 col-sm-4 col-md-3 col-lg-2">
               <div class="skill" style="background:rgb(230, 61, 69)">
                 <img src="./public/images/angular.svg" alt="" class="skill-icon">
               </div>
               <p class="skill-name">Angular 2+</p>
+            </div>
+            <div class="skill-obj col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="skill express-color">
+                <img src="./public/images/webrtc.png" alt="" class="skill-icon">
+              </div>
+              <p class="skill-name">WebRTC</p>
             </div>
             <div class="skill-obj col-6 col-sm-4 col-md-3 col-lg-2">
               <div class="skill" style="background:#563D7C">
@@ -264,6 +274,12 @@
                 <img src="./public/images/mysql.png" alt="" class="skill-icon">
               </div>
               <p class="skill-name">MySQL</p>
+            </div>
+            <div class="skill-obj col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="skill express-color">
+                <img src="./public/images/socketio.png" alt="" class="skill-icon">
+              </div>
+              <p class="skill-name">Socket.io</p>
             </div>
             <div class="skill-obj col-6 col-sm-4 col-md-3 col-lg-2">
               <div class="skill" style="background:#681F78">
@@ -308,6 +324,135 @@
     <section class="section-projects" id="projects">
 
       <h1 class="projects-title">Projects</h1>
+
+      <div class="project-bg" id="playspace" style="background:#009dee; z-index: 50;">
+        <div class="container">
+          <div class="project row">
+            <div class="row">
+              <div class="project-left col-lg-6">
+                <div class="project-header">
+                  <img src="./public/images/PlaySpace-Logo.png" class="project-logo" alt="">
+                  <div class="project-title">PlaySpace.tv</div>
+                </div> 
+                <p class="project-desc">
+                  PlaySpace is a web browser based, low latency livestreaming platform for gamers. It allows users to create an account and start streaming to the world without downloading any software. It's able to do this by harnessing new web technologies like <strong>WebRTC (Web Real-time Communication)</strong> to capture a user's webcam or desktop. The tech stack is using <strong>Vue.js</strong>, <strong>Node.js</strong>, and <strong>MongoDB</strong>.
+                </p>
+                <div class="project-skills">
+                    <h5>Tech Used</h5>
+                    <div class="project-skill html-color">
+                      <img src="./public/images/html5.svg" alt="">
+                    </div>
+                    <div class="project-skill css-color">
+                      <img src="./public/images/css3.svg" alt="">
+                    </div>
+                    <div class="project-skill javascript-color">
+                      <img src="./public/images/javascript.png" alt="">
+                    </div>
+                    <div class="project-skill webrtc-color">
+                      <img src="./public/images/webrtc.png" style="transform:translateY(-2px)" alt="">
+                    </div>
+                    <div class="project-skill mongo-color">
+                      <img src="./public/images/vuejs.png" alt="">
+                    </div>
+                    <div class="project-skill nodejs-color">
+                      <img src="./public/images/nodejs.png" alt="">
+                    </div>
+                    <div class="project-skill express-color">
+                      <img src="./public/images/express.png" alt="">
+                    </div>
+                    <div class="project-skill mongo-color">
+                      <img src="./public/images/mongodb.png" alt="">
+                    </div>
+                    <div class="project-skill socket-color">
+                      <img src="./public/images/socketio.png" alt="">
+                    </div>
+                </div>
+              </div>
+              <div class="project-right col-lg-6">
+                <div class="project-showcase">
+                  <video autoplay muted loop class="project-video" id="myVideo">
+                    <source src="./public/videos/PlaySpace-Demo.mp4" type="video/mp4">
+                  </video>
+                  <div class="project-links">
+                    <a class="project-link website-link" href="https://playspace.tv"  target="_blank" title="View Website">
+                      <i class="fa fa-globe website-link-icon"></i>
+                    </a>
+                    <a class="project-link website-link" href="https://medium.com/playspacetv"  target="_blank" style="background:#292929;" title="View Medium">
+                      <i class="fab fa-medium website-link-icon" style="transform:translate(1px);"></i>
+                    </a>
+                    <a class="project-link website-link" href="https://reddit.com/r/playspacetv"  target="_blank" style="background:#FF4500;" title="View Subreddit">
+                      <i class="fab fa-reddit website-link-icon"></i>
+                    </a>
+                    <a class="project-link website-link" href="https://twitter.com/playspacetv"  target="_blank" style="background:#1DA1F2;" title="View Twitter">
+                      <i class="fab fa-twitter website-link-icon" style="transform:translate(1px);"></i>
+                    </a>
+                    <a class="project-link website-link" href="https://instagram.com/playspacetv"  target="_blank" style="background:#C92F47;" title="View Instagram">
+                      <i class="fab fa-instagram website-link-icon" style="transform:translate(1px);"></i>
+                    </a>
+                    <a class="project-link website-link" href="http://discord.playspace.tv"  target="_blank" style="background:#7289DA;" title="View Discord">
+                      <i class="fab fa-discord website-link-icon" style="transform:translate(1px);"></i>
+                    </a>
+                    <a class="project-link website-link" href="https://www.youtube.com/channel/UC7Uqb7o-sthQtJLarbBGIcg"  target="_blank" style="background:#FF0000;" title="View YouTube Channel">
+                      <i class="fab fa-youtube website-link-icon" style="transform:translate(-2px);"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#!" onclick="viewMore(event)" class="view-more">
+              View More
+              <i class="fas fa-arrow-down"></i>
+            </a>
+            <div class="hidden">
+              <div class="row">
+                <div class="project-left col-lg-5">
+                  <div class="project-showcase">
+                    <img src="./public/images/playspace-screenshot-1.PNG" class="project-screenshot" alt="">
+                  </div>
+                </div>
+                <div class="project-right col-lg-7">
+                  <h3>What is it?</h3>
+                  <p class="project-desc">
+                    Popular livestreaming sites are broken. When you stream to sites like Twitch or YouTube Live, viewers will be left seconds in the past due to the delay. PlaySpace solves this problem by migrating to new technologies like <strong>WebRTC</strong> to not only have sub-second latency but also prevent the user from having to download any software. Currently the platform is able to achieve its latency via a peer-to-peer model over a peer-to-server model. However, this introduces scalability issues, so we will be using an <strong>SFU (Selective Forwarding Unit)</strong> infrastructure in the future.
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="project-left col-lg-7">
+                  <h3>Front-End Design</h3>
+                  <p class="project-desc">
+                    PlaySpace's front-end is built using <strong>Vue.js</strong>. It features a page for displaying all streams, login, signup, channel / stream page, and a page just for viewing chat. The front-end is reliant on our back-end API server to receive and send network requests. When a user goes to their channel, they have the options of streaming their webcam, desktop, mic audio, and desktop audio. These are all available because of <strong>WebRTC</strong>. When the user clicks start stream, it sends a request to the back-end where it tells anyone else on the channel that the stream has begun, and the user and streamer will establish a secure peer-to-peer connection.
+                  </p>
+                </div>
+                <div class="project-right col-lg-5">
+                  <div class="project-showcase">
+                    <img src="./public/images/playspace-screenshot-2.PNG" class="project-screenshot" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="project-left col-lg-5">
+                  <div class="project-showcase">
+                    <img src="./public/images/boarditt-screenshot-3.PNG" class="project-screenshot" alt="">
+                  </div>
+                </div>
+                <div class="project-right col-lg-7">
+                  <h3>Back-End Design</h3>
+                  <p class="project-desc">
+                    PlaySpace's back-end is built with <strong>Node.js</strong> to host an API. It features its on routes, but also interacts with external APIs like <strong>Giphy</strong>, <strong>Cloudinary</strong>, and <strong>Twilio</strong>. To store user or channel information, it uses a <strong>MongoDB</strong> database. In order for users on the front-end to connect to a streamer or chat, they connect to the back-end <strong>Socket.io</strong> server. Sockets are used to emit <strong>WebRTC</strong> events between streamers and viewers. This is needed for establishing a connection between them, but once it's done the WebSocket server is no longer needed, and is instead used for the chat room and other things.
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <a href="https://playspace.tv" target="_blank" class="view-site">
+                  <i class="fa fa-globe"></i>
+                  <p>View Website</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div class="project-bg" id="boarditt" style="background:#658FEB; z-index: 50;">
         <div class="container">
@@ -429,7 +574,7 @@
         </div>
       </div>
 
-      <div class="project-bg" id="boarditt" style="background:#5198E4; z-index: 50;">
+      <div class="project-bg" id="bubble.js" style="background:#5198E4; z-index: 50;">
           <div class="container">
             <div class="project row">
               <div class="row">
@@ -478,7 +623,7 @@
           </div>
         </div>
 
-      <div class="project-bg" style="background:rgb(34, 180, 202);">
+      <div class="project-bg" id="modernnode" style="background:rgb(34, 180, 202);">
         <div class="container">
           <div class="project row">
             <div class="project-left col-lg-6">
@@ -528,8 +673,8 @@
     <section class="section-contact" id="contact">
       <div class="container">
         <h1 class="contact-title">Like what you see?</h1>
-        <a href="/contact" class="ending-cta">
-          <i class="material-icons">email</i>Let's Talk!</a>
+        <a href="mailto:tryston@trystonperry.com" class="ending-cta">
+          <i class="fas fa-paper-plane"></i> Let's Talk!</a>
       </div>
     </section>
 
@@ -543,9 +688,9 @@
             <i class="fab fa-linkedin"></i>
             LinkedIn
           </a>
-          <a href="https://trystonperry.com/contact">
+          <a href="mailto:tryston@trystonperry.com">
               <i class="fas fa-paper-plane"></i>
-              Contact
+              Email
           </a>
           <a href="https://resume.trystonperry.com">
             <i class="fas fa-file"></i>
@@ -564,9 +709,9 @@
     </section>
     
       <div class="contact fromSide-play">
-        <a href="/contact" class="contact-btn">
+        <a href="mailto:tryston@trystonperry.com" class="contact-btn">
           <i class="fas fa-paper-plane" style="font-size: 32px;"></i>
-          <p id="contact-text" style="display:inline-block; margin: 0; font-size: 32px;padding:0 10px;">Contact</p>
+          <p id="contact-text" style="display:inline-block; margin: 0; font-size: 32px;padding:0 10px;">Let's Talk!</p>
         </a>
       </div>
   

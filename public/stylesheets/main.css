@@ -120,9 +120,10 @@
   animation-name: play60;
 }
 
-body, .body {
+body,
+.body {
   overflow-x: hidden;
-} 
+}
 
 .v-align {
   vertical-align: middle;
@@ -169,8 +170,8 @@ body, .body {
 .intro-cta {
   color: grey;
   background: white;
-  padding: 20px 30px;
-  border-radius: 10px; 
+  padding: 20px 30px 20px 25px;
+  border-radius: 10px;
   font-size: 20px;
   animation: 1s ease-in-out 0s 1 fadeTextIn;
 }
@@ -212,7 +213,7 @@ body, .body {
 }
 
 button:focus {
-  outline:0;
+  outline: 0;
 }
 
 .menu {
@@ -225,7 +226,7 @@ button:focus {
 
 .menu-list {
   list-style: none;
-  background: #F0F0F0;
+  background: #f0f0f0;
   padding: 0;
   margin: 0;
 }
@@ -235,7 +236,7 @@ button:focus {
 }
 
 .menu-list-item a {
-  color: #0692FF;
+  color: #0692ff;
   font-weight: bold;
   cursor: pointer;
 }
@@ -280,16 +281,15 @@ button:focus {
 }
 
 .section-links {
-
 }
 
 .linkedin {
-  color: #0692FF;
+  color: #0692ff;
   transition-duration: 200ms;
 }
 
 .linkedin:hover {
-  color: #0077B5;
+  color: #0077b5;
   text-decoration: none;
 }
 
@@ -298,7 +298,7 @@ button:focus {
 }
 
 .github {
-  color: #0692FF;
+  color: #0692ff;
   transition-duration: 200ms;
   margin-left: 15px;
 }
@@ -309,6 +309,21 @@ button:focus {
 }
 
 .github i {
+  font-size: 48px;
+}
+
+.twitter {
+  color: #0692ff;
+  transition-duration: 200ms;
+  margin-left: 15px;
+}
+
+.twitter:hover {
+  color: #1da1f2;
+  text-decoration: none;
+}
+
+.twitter i {
   font-size: 48px;
 }
 
@@ -327,7 +342,6 @@ button:focus {
 }
 
 .skill-obj {
-  
 }
 
 .skill {
@@ -361,7 +375,7 @@ button:focus {
 }
 
 .project-bg {
-  background: #F0F0F0;
+  background: #f0f0f0;
   padding: 40px 60px;
   box-shadow: inset 0 10px 15px -8px #000;
   padding: 75px 0;
@@ -370,6 +384,10 @@ button:focus {
 .project {
   color: white;
   padding: 10px;
+}
+
+.project-logo {
+  border-radius: 8px;
 }
 
 .project-screenshot {
@@ -386,7 +404,7 @@ button:focus {
 
 .project-showcase {
   /* flex: 1; */
-  background: #326AE4;
+  background: #326ae4;
   position: relative;
   border-radius: 25px;
   float: right;
@@ -428,7 +446,7 @@ button:focus {
 }
 
 .project-sm {
-  background: #F0F0F0;
+  background: #f0f0f0;
   padding: 20px 20px;
   border-radius: 20px;
   width: 33%;
@@ -448,7 +466,7 @@ button:focus {
 .projects-title {
   font-size: 75px;
   text-align: center;
-  background: #0692FF;
+  background: #0692ff;
   margin: 0;
   color: white;
   padding: 50px;
@@ -465,7 +483,7 @@ button:focus {
   font-size: 50px;
   font-weight: bold;
   display: inline-block;
-  vertical-align: middle
+  vertical-align: middle;
 }
 
 .project-logo {
@@ -490,7 +508,8 @@ button:focus {
   transition-duration: 200ms;
   border-radius: 50%;
   background: black;
-  width: 45px; height: 45px;
+  width: 45px;
+  height: 45px;
   display: inline-block;
 }
 
@@ -504,11 +523,11 @@ button:focus {
 .project-link:hover {
   color: white;
   text-decoration: none;
-  background: #007BFF;
+  background: #007bff;
 }
 
 .view-site {
-  background: #326AE4;
+  background: #326ae4;
   color: white;
   padding: 30px;
   font-size: 24px;
@@ -535,7 +554,7 @@ button:focus {
 }
 
 .website-link {
-  background: #007BFF;
+  background: #007bff;
 }
 
 .website-link-icon {
@@ -544,7 +563,7 @@ button:focus {
 
 .website-link:hover {
   transform: scale(1.1);
-  box-shadow: rgba(0, 0, 0, 0.493) 0px 0px 5px
+  box-shadow: rgba(0, 0, 0, 0.493) 0px 0px 5px;
 }
 
 .github-link {
@@ -573,7 +592,7 @@ button:focus {
 }
 
 .contact {
-  background: #0692FF;
+  background: #0692ff;
   padding: 10px;
   border-radius: 25px;
   position: fixed;
@@ -624,8 +643,8 @@ button:focus {
 .ending-cta {
   color: grey;
   background: white;
-  padding: 20px 30px;
-  border-radius: 10px; 
+  padding: 20px 30px 20px 25px;
+  border-radius: 10px;
   font-size: 40px;
   transition-duration: 200ms;
 }
@@ -633,7 +652,7 @@ button:focus {
 .ending-cta i {
   vertical-align: middle;
   padding-right: 5px;
-  font-size: 48px;
+  padding-bottom: 10px;
 }
 
 .ending-cta:hover {
@@ -643,7 +662,7 @@ button:focus {
 }
 
 .section-footer {
-  background: #0692FF;
+  background: #0692ff;
   /* height: 85px; */
   width: 100%;
   padding: 50px 0;
@@ -667,21 +686,54 @@ button:focus {
   margin: 7px;
 }
 
-.html-color { background: #FFB560 }
-.css-color { background: #32C4E9 }
-.javascript-color { background: #F0DB4F }
-.angular-color { background: #E63D45 }
-.bootstrap-color { background: #563D7C }
-.npm-color { background: #CC3534 }
-.node-color { background: #C2FD75 }
-.express-color { background: #FFFFFF }
-.mongo-color { background: #BEF8A3 }
-.mysql-color { background: #3765AF }
-.heroku-color { background: #681F78 }
-.firebase-color { background: #CC770C }
-.vscode-color { background: #0179CF }
-.photoshop-color { background: #81BBFB }
-.illustrator-color { background: #FFAF3A }
+.html-color {
+  background: #ffb560;
+}
+.css-color {
+  background: #32c4e9;
+}
+.javascript-color {
+  background: #f0db4f;
+}
+.angular-color {
+  background: #e63d45;
+}
+.vue-color {
+  background: #5dc295;
+}
+.bootstrap-color {
+  background: #563d7c;
+}
+.npm-color {
+  background: #cc3534;
+}
+.node-color {
+  background: #c2fd75;
+}
+.express-color {
+  background: #ffffff;
+}
+.mongo-color {
+  background: #bef8a3;
+}
+.mysql-color {
+  background: #3765af;
+}
+.heroku-color {
+  background: #681f78;
+}
+.firebase-color {
+  background: #cc770c;
+}
+.vscode-color {
+  background: #0179cf;
+}
+.photoshop-color {
+  background: #81bbfb;
+}
+.illustrator-color {
+  background: #ffaf3a;
+}
 
 @media screen and (max-width: 1600px) {
   .background-circle-1 {
@@ -699,16 +751,16 @@ button:focus {
   }
   .intro-caption {
     font-size: 6vw;
-    text-align: center; 
+    text-align: center;
   }
   .cta-btn {
     text-align: center;
   }
-  .background-img{
-    display:none;
+  .background-img {
+    display: none;
   }
   .section-landing {
-    background: #0692FF;
+    background: #0692ff;
   }
   .about-card {
     float: none;
@@ -719,11 +771,19 @@ button:focus {
   }
   .section-about {
     color: white;
-    background: rgb(6,146,255);
-    background: linear-gradient(180deg, rgba(6,146,255,1) 0%, rgba(6,146,255,0.8) 60%, rgba(6,146,255,0.2) 80%, rgba(6,195,255,0) 100%);
+    background: rgb(6, 146, 255);
+    background: linear-gradient(
+      180deg,
+      rgba(6, 146, 255, 1) 0%,
+      rgba(6, 146, 255, 0.8) 60%,
+      rgba(6, 146, 255, 0.2) 80%,
+      rgba(6, 195, 255, 0) 100%
+    );
     padding-bottom: 40px;
   }
-  .about-title, .about-desc, .section-links {
+  .about-title,
+  .about-desc,
+  .section-links {
     text-align: center;
   }
   .section-skills {
@@ -767,19 +827,18 @@ button:focus {
   .project-sm {
     width: 100%;
   }
-  .project{ 
+  .project {
     display: block;
   }
-  .project-left{
+  .project-left {
     width: 100%;
   }
   .project-showcase {
     width: 100%;
   }
-
 }
 
-@media screen and (max-width: 1199px){
+@media screen and (max-width: 1199px) {
   #tmn-title {
     font-size: 2.5em;
   }
